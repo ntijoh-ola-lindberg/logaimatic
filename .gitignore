@@ -4,6 +4,8 @@ Gemfile.lock
 .byebug_history
 db/*.sqlite
 
+logs/*
+
 # Mac
 .DS_Store
 .DocumentRevisions-V100

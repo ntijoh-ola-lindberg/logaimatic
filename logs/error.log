@@ -465,3 +465,19 @@
 [2025-06-10 11:24:29] INFO  WEBrick 1.9.1
 [2025-06-10 11:24:29] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
 [2025-06-10 11:24:29] INFO  WEBrick::HTTPServer#start: pid=59233 port=9292
+[2025-06-10 11:43:30] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 11:43:30] INFO  going to shutdown ...
+[2025-06-10 11:43:30] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 11:43:31] INFO  WEBrick 1.9.1
+[2025-06-10 11:43:31] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 11:43:31] INFO  WEBrick::HTTPServer#start: pid=72956 port=9292
