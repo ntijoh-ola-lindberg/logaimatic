@@ -15,8 +15,18 @@ class LogAiMatic
     @client = GeminiCraft::Client.new()
   end
 
+  #fswatch
+
   def start_watching
     puts "Starting to watch for errors in logs/error.log..."
+
+    prompt = <<~PROMPT
+      You are a teacher working with students learning how to program.
+      The students ruby file is: #{File.read("App.rb")}.
+      Print the line with the error from the students code. Explain the problem and don't give a solution.
+      Enhance response for readability in terminal.
+    PROMPT
+
     File.open("logs/error.log") do |log|
       log.extend(File::Tail)
       log.interval = 10
@@ -26,11 +36,11 @@ class LogAiMatic
           begin
             response = @client.generate_content(
               "Explain this log line:\n#{line}",
-              "You are a teacher working with students learning how to program. Keep explanations short"
+              prompt
             )
 
             if response
-              puts "\nLogAiMatic\n #{response.}"
+              puts "\nLogAiMatic\n #{response}"
               puts "\nPress Enter to continue watching logs..."
               $stdin.gets
             end

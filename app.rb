@@ -28,7 +28,7 @@ class App < Sinatra::Base
 
     # Routen gör en redirect till '/fruits'
     get '/' do
-        redirec('/fruits')
+        redirect('/fruits')
     end
 
     #Routen hämtar alla frukter i databasen
@@ -56,7 +56,7 @@ class App < Sinatra::Base
 
     # Routen visar all info (från databasen) om en frukt
     get '/fruits/:id' do | id |
-      @fruit = db.execute('SELECT * FROM fruits WHERE id=?',id).first
+      @fruit = db.execute('SELECT * FROM fruits WHERE id=?',id)
       erb(:"fruits/show")
     end
 
