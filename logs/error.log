@@ -1,0 +1,467 @@
+[2025-06-10 09:51:56] INFO  WEBrick 1.9.1
+[2025-06-10 09:51:56] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 09:51:56] INFO  WEBrick::HTTPServer#start: pid=8294 port=9292
+2025-06-10 09:52:02 - NoMethodError - undefined method `redirec' for an instance of App:
+	
+	        redirec('/fruits')
+	        ^^^^^^^
+	Did you mean?  redirect
+	               redirect?
+	/Users/ola/code/logaimatic/app.rb:31:in `block in <class:App>'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `block in compile!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (3 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1092:in `route_eval'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (2 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1123:in `block in process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1072:in `block in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `each'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1193:in `block in dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1188:in `dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `block in call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:993:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/xss_header.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/path_traversal.rb:18:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/json_csrf.rb:28:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/frame_options.rb:33:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/middleware/logger.rb:17:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:262:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/head.rb:15:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/show_exceptions.rb:23:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:227:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:2138:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `block in call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1898:in `synchronize'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/tempfile_reaper.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:66:in `response'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:41:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/show_exceptions.rb:31:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/common_logger.rb:43:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:269:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/content_length.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:111:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:140:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:96:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
+127.0.0.1 - - [10/Jun/2025:09:52:02 +0200] "GET / HTTP/1.1" 500 153079 0.0378
+127.0.0.1 - - [10/Jun/2025:09:52:02 +0200] "GET /__sinatra__/500.png HTTP/1.1" 200 24378 0.0049
+[2025-06-10 10:05:39] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 10:05:39] INFO  going to shutdown ...
+[2025-06-10 10:05:39] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 10:05:39] INFO  WEBrick 1.9.1
+[2025-06-10 10:05:39] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 10:05:39] INFO  WEBrick::HTTPServer#start: pid=14072 port=9292
+[2025-06-10 10:06:26] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 10:06:26] INFO  going to shutdown ...
+[2025-06-10 10:06:26] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 10:06:26] INFO  WEBrick 1.9.1
+[2025-06-10 10:06:26] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 10:06:26] INFO  WEBrick::HTTPServer#start: pid=14421 port=9292
+[2025-06-10 10:06:33] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 10:06:33] INFO  going to shutdown ...
+[2025-06-10 10:06:33] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 10:06:33] INFO  WEBrick 1.9.1
+[2025-06-10 10:06:33] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 10:06:33] INFO  WEBrick::HTTPServer#start: pid=14479 port=9292
+[2025-06-10 10:06:40] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 10:06:40] INFO  going to shutdown ...
+[2025-06-10 10:06:40] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 10:06:40] INFO  WEBrick 1.9.1
+[2025-06-10 10:06:40] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 10:06:40] INFO  WEBrick::HTTPServer#start: pid=14543 port=9292
+[2025-06-10 10:06:43] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 10:06:43] INFO  going to shutdown ...
+[2025-06-10 10:06:43] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 10:06:43] INFO  WEBrick 1.9.1
+[2025-06-10 10:06:43] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 10:06:43] INFO  WEBrick::HTTPServer#start: pid=14572 port=9292
+[2025-06-10 10:06:46] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 10:06:46] INFO  going to shutdown ...
+[2025-06-10 10:06:46] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 10:06:46] INFO  WEBrick 1.9.1
+[2025-06-10 10:06:46] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 10:06:46] INFO  WEBrick::HTTPServer#start: pid=14610 port=9292
+[2025-06-10 10:08:34] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 10:08:34] INFO  going to shutdown ...
+[2025-06-10 10:08:34] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 10:08:35] INFO  WEBrick 1.9.1
+[2025-06-10 10:08:35] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 10:08:35] INFO  WEBrick::HTTPServer#start: pid=15363 port=9292
+[2025-06-10 10:10:34] INFO  going to shutdown ...
+[2025-06-10 10:10:34] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 10:10:36] INFO  WEBrick 1.9.1
+[2025-06-10 10:10:36] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 10:10:36] INFO  WEBrick::HTTPServer#start: pid=16270 port=9292
+[2025-06-10 10:10:43] INFO  going to shutdown ...
+[2025-06-10 10:10:43] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 10:11:42] INFO  WEBrick 1.9.1
+[2025-06-10 10:11:42] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 10:11:42] INFO  WEBrick::HTTPServer#start: pid=16821 port=9292
+2025-06-10 10:25:41 - NoMethodError - undefined method `redirec' for an instance of App:
+	
+	        redirec('/fruits')
+	        ^^^^^^^
+	Did you mean?  redirect
+	               redirect?
+	/Users/ola/code/logaimatic/app.rb:31:in `block in <class:App>'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `block in compile!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (3 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1092:in `route_eval'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (2 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1123:in `block in process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1072:in `block in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `each'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1193:in `block in dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1188:in `dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `block in call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:993:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/xss_header.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/path_traversal.rb:18:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/json_csrf.rb:28:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/frame_options.rb:33:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/middleware/logger.rb:17:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:262:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/head.rb:15:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/show_exceptions.rb:23:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:227:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:2138:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `block in call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1898:in `synchronize'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/tempfile_reaper.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:66:in `response'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:41:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/show_exceptions.rb:31:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/common_logger.rb:43:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:269:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/content_length.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:111:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:140:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:96:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
+127.0.0.1 - - [10/Jun/2025:10:25:41 +0200] "GET / HTTP/1.1" 500 153079 0.0555
+2025-06-10 10:25:43 - NoMethodError - undefined method `redirec' for an instance of App:
+	
+	        redirec('/fruits')
+	        ^^^^^^^
+	Did you mean?  redirect
+	               redirect?
+	/Users/ola/code/logaimatic/app.rb:31:in `block in <class:App>'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `block in compile!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (3 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1092:in `route_eval'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (2 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1123:in `block in process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1072:in `block in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `each'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1193:in `block in dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1188:in `dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `block in call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:993:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/xss_header.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/path_traversal.rb:18:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/json_csrf.rb:28:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/frame_options.rb:33:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/middleware/logger.rb:17:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:262:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/head.rb:15:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/show_exceptions.rb:23:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:227:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:2138:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `block in call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1898:in `synchronize'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/tempfile_reaper.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:66:in `response'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:41:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/show_exceptions.rb:31:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/common_logger.rb:43:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:269:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/content_length.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:111:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:140:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:96:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
+127.0.0.1 - - [10/Jun/2025:10:25:43 +0200] "GET / HTTP/1.1" 500 153475 0.0449
+2025-06-10 10:25:58 - NoMethodError - undefined method `redirec' for an instance of App:
+	
+	        redirec('/fruits')
+	        ^^^^^^^
+	Did you mean?  redirect
+	               redirect?
+	/Users/ola/code/logaimatic/app.rb:31:in `block in <class:App>'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `block in compile!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (3 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1092:in `route_eval'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (2 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1123:in `block in process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1072:in `block in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `each'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1193:in `block in dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1188:in `dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `block in call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:993:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/xss_header.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/path_traversal.rb:18:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/json_csrf.rb:28:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/frame_options.rb:33:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/middleware/logger.rb:17:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:262:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/head.rb:15:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/show_exceptions.rb:23:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:227:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:2138:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `block in call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1898:in `synchronize'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/tempfile_reaper.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:66:in `response'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:41:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/show_exceptions.rb:31:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/common_logger.rb:43:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:269:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/content_length.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:111:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:140:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:96:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
+127.0.0.1 - - [10/Jun/2025:10:25:58 +0200] "GET / HTTP/1.1" 500 153756 0.0305
+127.0.0.1 - - [10/Jun/2025:10:25:58 +0200] "GET /__sinatra__/500.png HTTP/1.1" 200 24378 0.0037
+127.0.0.1 - - [10/Jun/2025:10:25:58 +0200] "GET /favicon.ico HTTP/1.1" 200 15406 0.0004
+2025-06-10 10:30:50 - NoMethodError - undefined method `redirec' for an instance of App:
+	
+	        redirec('/fruits')
+	        ^^^^^^^
+	Did you mean?  redirect
+	               redirect?
+	/Users/ola/code/logaimatic/app.rb:31:in `block in <class:App>'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1807:in `block in compile!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (3 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1092:in `route_eval'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1074:in `block (2 levels) in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1123:in `block in process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1121:in `process_route'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1072:in `block in route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `each'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1069:in `route!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1193:in `block in dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1188:in `dispatch!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `block in call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `catch'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1164:in `invoke'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1004:in `call!'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:993:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/xss_header.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/path_traversal.rb:18:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/json_csrf.rb:28:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/base.rb:53:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-protection-4.1.1/lib/rack/protection/frame_options.rb:33:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/middleware/logger.rb:17:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:262:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/head.rb:15:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/show_exceptions.rb:23:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:227:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:2138:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `block in call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1898:in `synchronize'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:1677:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/tempfile_reaper.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:66:in `response'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/lint.rb:41:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/show_exceptions.rb:31:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/common_logger.rb:43:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/sinatra-4.1.1/lib/sinatra/base.rb:269:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rack-3.1.16/lib/rack/content_length.rb:20:in `call'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:111:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:140:in `service'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/httpserver.rb:96:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
+127.0.0.1 - - [10/Jun/2025:10:30:50 +0200] "GET / HTTP/1.1" 500 153149 0.0274
+[2025-06-10 11:21:39] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 11:21:39] INFO  going to shutdown ...
+[2025-06-10 11:21:39] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 11:21:40] INFO  WEBrick 1.9.1
+[2025-06-10 11:21:40] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 11:21:40] INFO  WEBrick::HTTPServer#start: pid=57238 port=9292
+[2025-06-10 11:22:49] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 11:22:49] INFO  going to shutdown ...
+[2025-06-10 11:22:49] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 11:22:49] INFO  WEBrick 1.9.1
+[2025-06-10 11:22:49] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 11:22:49] INFO  WEBrick::HTTPServer#start: pid=58067 port=9292
+[2025-06-10 11:23:54] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 11:23:54] INFO  going to shutdown ...
+[2025-06-10 11:23:54] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 11:23:54] INFO  WEBrick 1.9.1
+[2025-06-10 11:23:54] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 11:23:54] INFO  WEBrick::HTTPServer#start: pid=58789 port=9292
+[2025-06-10 11:24:29] FATAL SignalException: SIGTERM
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `select'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:173:in `block in start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:32:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/webrick-1.9.1/lib/webrick/server.rb:160:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/handler/webrick.rb:34:in `run'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:341:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/lib/rackup/server.rb:182:in `start'
+	/Users/ola/.gem/ruby/3.3.4/gems/rackup-2.2.1/bin/rackup:5:in `<top (required)>'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `load'
+	/Users/ola/.gem/ruby/3.3.4/bin/rackup:25:in `<main>'
+[2025-06-10 11:24:29] INFO  going to shutdown ...
+[2025-06-10 11:24:29] INFO  WEBrick::HTTPServer#start done.
+[2025-06-10 11:24:29] INFO  WEBrick 1.9.1
+[2025-06-10 11:24:29] INFO  ruby 3.3.4 (2024-07-09) [arm64-darwin23]
+[2025-06-10 11:24:29] INFO  WEBrick::HTTPServer#start: pid=59233 port=9292

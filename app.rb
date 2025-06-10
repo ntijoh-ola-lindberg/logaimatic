@@ -1,4 +1,19 @@
+require 'logger'
+
 class App < Sinatra::Base
+
+  Dir.mkdir("logs") unless Dir.exist?("logs")
+  log_file = File.new("logs/error.log", "a+")
+  log_file.sync = true
+  LOGGER = Logger.new(log_file)
+
+  configure do
+    enable :logging
+    set :logger, LOGGER
+  end
+
+  $stderr.reopen(log_file)
+  $stderr.sync = true
 
     # Funktion för att prata med databasen
     # Exempel på användning: db.execute('SELECT * FROM fruits')
@@ -13,7 +28,7 @@ class App < Sinatra::Base
 
     # Routen gör en redirect till '/fruits'
     get '/' do
-        redirect('/fruits')
+        redirec('/fruits')
     end
 
     #Routen hämtar alla frukter i databasen

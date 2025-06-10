@@ -9,3 +9,8 @@ gem 'sinatra'
 gem 'rerun'
 gem 'sqlite3'
 gem 'webrick'
+
+gem 'dotenv'
+gem 'openai'
+gem 'gemini_craft'
+gem 'file-tail'
